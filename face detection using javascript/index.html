@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy@1.0.5/dist/webcam-easy.min.js"></script>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<body>
+
+    
+    <div class="container">
+        <h1 style="text-align: center;">Take a Snap</h1>
+        <div class="cam">
+            <video  id="webCam" autoplay playsinline width="300" height="300"></video>
+        </div>
+        <div class="take">
+            <canvas id="canvas" ></canvas>
+        </div>
+        <div id="snap">
+            <a   onclick="takePicture()">Snap</a>
+        </div>
+        <div id="redirect">
+            <a   href="register.html">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        const webcamele = document.getElementById("webCam");
+        const canvas = document.getElementById("canvas");
+        const webcam = new Webcam(webcamele, "user" , canvas);
+        webcam.start();
+
+
+        function takePicture(){
+            let picture = webcam.snap();
+            document.querySelector("a").href = picture;
+        }
+
+      
+    </script>
+
+</body>
+
+</html>

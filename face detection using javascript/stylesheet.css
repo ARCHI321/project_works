@@ -1,0 +1,96 @@
+*{
+    
+    box-sizing: border-box;
+}
+a {
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    width: 50%;
+
+}
+
+a:hover{
+    cursor: pointer;
+    background-color: brown;
+    
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 34px;
+    text-align: center;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#canvas{
+    width: 300px;
+    height: 232px;
+    padding: 12px;
+}
+.header{
+    text-align: center;
+    margin: 140px auto;
+    
+}
+.header::before{
+    content: "";
+    background: url("./image/38546a9362aac7257e733f84bfd8d453.jpg");
+    width: 99%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    background-position: center,top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    top: 0;
+}
+
+
+.header h1{
+    text-align: center;
+}
+form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+form input{
+    width: 50%;
+    font-size: medium;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 34px;
+    background-color: white;
+    
+}
+.btn{
+     width: 15%;
+     align-items: center;
+     margin: 10px auto;
+     border-radius: 34px;
+     height: 31px;
+     background-color: rgb(122, 122, 231);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#redirect{
+    margin:30px auto;
+}
+
