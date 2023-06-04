@@ -1,0 +1,1 @@
+<button class="button-secondary" onclick="document.location='./handle_login.php?logout=true'">Logout</button>
